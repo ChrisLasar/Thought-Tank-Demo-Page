@@ -14,7 +14,7 @@ params:
       email: christian@lasarczyk.de
   backend:
     name: github
-    repo: Thought-Tank/one-click-netlify-ThoughtTank
+    repo: ChrisLasar/Thought-Tank-Demo-Page
     branch: master
 
 enableGitInfo: true
