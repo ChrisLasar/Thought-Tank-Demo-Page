@@ -24,7 +24,7 @@ Add your own inboxes here.
 Connecting Notes is an important aspect of a vital zettelkasten. 
 The following notes might not be linked sufficiently.
 
-{{< flow/unlinked-notes >}}
+{{< flow/unlinked-notes threshold="0" >}}
 
 
 ### Implicit Connections by Keywords
