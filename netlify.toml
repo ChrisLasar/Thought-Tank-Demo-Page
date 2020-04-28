@@ -6,7 +6,7 @@
   publish = "dist"
 
 [context.deploy-preview]
-  command = "yarn build:preview"
+  command = "sed -i s/TT_PLACEHOLDER_REPOSITORY/${REPOSITORY_URL}/g site/_default/config.yml && yarn build:preview"
 
 
 [[redirects]]

@@ -14,7 +14,7 @@ params:
       email: christian@lasarczyk.de
   backend:
     name: github
-    repo: ChrisLasar/Thought-Tank-Demo-Page
+    repo: "TT_PLACEHOLDER_REPOSITORY"
     branch: master
 
 enableGitInfo: true
