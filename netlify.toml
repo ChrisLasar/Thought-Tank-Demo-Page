@@ -2,11 +2,11 @@
   HUGO_VERSION = "0.69.0"
 
 [build]
-  command = "yarn build"
+  command = "sed -i s/TT_PLACEHOLDER_REPOSITORY/${REPOSITORY_URL}/g site/_default/config.yml && yarn build"
   publish = "dist"
 
 [context.deploy-preview]
-  command = "sed -i s/TT_PLACEHOLDER_REPOSITORY/${REPOSITORY_URL}/g site/_default/config.yml && yarn build:preview"
+  command = "yarn build:preview"
 
 
 [[redirects]]
