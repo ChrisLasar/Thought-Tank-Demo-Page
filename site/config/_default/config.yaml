@@ -15,7 +15,7 @@ params:
   backend:
     name: github
     repo: "TT_PLACEHOLDER_REPOSITORY"
-    branch: master
+    branch: "TT_PLACEHOLDER_BRANCH"
 
 enableGitInfo: true
 
