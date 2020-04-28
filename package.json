@@ -1,6 +1,6 @@
 {
   "name": "ThoughtTank-Netlify",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "ThoughtTank is a modern Zettelkasten running on Netlify out of the box.",
   "repository": "Thought-Tank/one-click-netlify-ThoughtTank",
   "main": "index.js",
