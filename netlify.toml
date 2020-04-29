@@ -2,7 +2,12 @@
   HUGO_VERSION = "0.69.0"
 
 [build]
-  command = "sed -i s#TT_PLACEHOLDER_REPOSITORY#${REPOSITORY_URL}#g site/config/_default/config.yaml && sed -i s#TT_PLACEHOLDER_BRANCH#${BRANCH}#g site/config/_default/config.yaml && yarn build"
+  command = """\
+            sed -i s#TT_PLACEHOLDER_REPOSITORY#${REPOSITORY_URL}#g site/config/_default/config.yaml && \
+            sed -i s#TT_PLACEHOLDER_BRANCH#${BRANCH}#g site/config/_default/config.yaml && \
+            sed -i s#TT_PLACEHOLDER_URL#${URL}#g site/config/_default/config.yaml && \
+            && yarn build"""
+            
   publish = "dist"
 
 [context.deploy-preview]
