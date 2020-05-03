@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <style>
+        html {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .columns {
+            height: 100%;
+        }
+
+        .column.no-scroll {
+            overflow: auto;
+        }
+
+        .column.left-scroll {
+            direction: rtl;
+        }
+
+        .column.left-scroll nav {
+            direction: ltr;
+        }
+
+        .column.icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons div {
+            padding: 0.5em;
+        }
+
+        .column.info div.tabs ul {
+            width: 100%;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .column.info div.tabs li {
+            width: 50%;
+        }
+    </style>
+
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="//localhost:1313//">
+
+                <span class="icon">
+                    <img class="icon" src="/svg/thought-tank-logo-small.min.svg" alt="logo">
+                </span>
+                <p class="title">
+                    Thought Tank
+                </p>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="columns is-gapless">
+        <div class="column icons is-narrow has-background-primary has-text-white is-hidden-touch">
+            <!--icons-->
+            <section class="section is-paddingless">
+                <div class="container has-text-centered has-text-grey-dark has-background-white is-fullwidth">
+                    <span class="icon is-large">
+                        <i class="fas fa-2x fa-file-alt"></i>
+
+                    </span><br>
+                    Notes
+                </div><br>
+                <div class="container has-text-centered">
+                    <span class="icon is-large">
+                        <i class="fas fa-2x fa-book"></i>
+
+                    </span><br>
+                    Literature
+                </div><br>
+                <div class="container has-text-centered">
+                    <span class="icon is-large">
+                        <i class="fas fa-2x fa-list-ul"></i>
+                    </span><br>
+                    Flow
+                </div><br>
+                <div class="container has-text-centered">
+                    <span class="icon is-large">
+                        <i class="fas fa-2x fa-feather-alt"></i>
+                    </span><br>
+                    Diary
+                </div>
+            </section>
+        </div>
+        <div class="column left-scroll no-scroll is-3 is-hidden-mobile">
+            <!--panel-->
+            <nav class="panel">
+                <p class="panel-heading is-radiusless">
+                    List of Notes
+                </p>
+                <!--p class="panel-tabs">
+                    <a class="is-active">All</a>
+                    <a>Related</a>
+                </p-->
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Search">
+                        <span class="icon is-left">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+                <a class="panel-block is-active">
+                    <span class="panel-icon">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i>
+                    </span>
+                    <span class="is-size-7">
+
+                        Ein etwas längerer und mehrzeiliger Titel, wie er in einem Zettekasten durchaus vorkommen kann
+                    </span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    marksheet
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    minireset.css
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    jgthms.github.io
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </span>
+                    daniellowtw/infboard
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </span>
+                    mojs
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    marksheet
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    minireset.css
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    jgthms.github.io
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </span>
+                    daniellowtw/infboard
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </span>
+                    mojs
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    marksheet
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    minireset.css
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    jgthms.github.io
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </span>
+                    daniellowtw/infboard
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    </span>
+                    mojs
+                </a>
+
+            </nav>
+        </div>
+        <div class="column is-3 is-hidden-tablet">
+            <button class="button is-light is-fullwidth is-medium"><strong>Back to List of Notes</strong></button>
+        </div>
+        <div class="column no-scroll is-6">
+            <!--main/note-->
+            <section class="section">
+                <div class="container">
+                    <h1 class="title is-1">
+                        Thought Tank features to build well documented and connected thoughts
+                    </h1>
+                    <div class="content">
+                        <p>To support <a href="/notes/2020041509534662/"
+                                title="Applications in which the Zettelkasten is superior to other approaches"
+                                class="note-link">Applications in which the Zettelkasten is superior to other
+                                approaches</a> we added the following feature during for the different phases of your
+                            thoughts lifecycle:</p>
+                        <ul>
+                            <li>Collecting notes
+                                <ul>
+                                    <li>Different inboxes allow you to <a href="/notes/2020041312405802/"
+                                            title="Capture your thoughts whereever you are" class="note-link">Capture
+                                            your thoughts whereever you are</a>.</li>
+                                </ul>
+                            </li>
+                            <li>Writing an presenting notes
+                                <ul>
+                                    <li>Thought Tank uses a <a href="/notes/2020041509262035/"
+                                            title="Predefined structure for capturing a thought "
+                                            class="note-link">Predefined structure for capturing a thought </a>, this
+                                        also allows for adequate presentation in different situations and</li>
+                                    <li>also allows you to <a href="/notes/2020041319033216/"
+                                            title="Quickly get to the core of a thought" class="note-link">Quickly get
+                                            to the core of a thought</a>.</li>
+                                </ul>
+                            </li>
+                            <li>Connecting notes
+                                <ul>
+                                    <li><a href="/notes/2020032817270190/"
+                                            title="As connections between notes create most value, connecting should be as convenient as possible"
+                                            class="note-link">As connections between notes create most value, connecting
+                                            should be as convenient as possible</a></li>
+                                    <li><a href="/notes/2020041312255463/"
+                                            title="Transformation of implicit into explicit relationships between notes generate knowledge"
+                                            class="note-link">Transformation of implicit into explicit relationships
+                                            between notes generate knowledge</a> therefore we are <a
+                                            href="/notes/2020033010475958/"
+                                            title="Supporting the identification of related thoughts"
+                                            class="note-link">Supporting the identification of related thoughts</a></li>
+                                </ul>
+                            </li>
+                            <li>Improving notes
+                                <ul>
+                                    <li><a href="/notes/2020041312361032/"
+                                            title="More efficiency and productivity through process support"
+                                            class="note-link">More efficiency and productivity through process
+                                            support</a></li>
+                                    <li>Foster a flow with respect to editing, as <a href="/notes/2020033010573035/"
+                                            title="Manage the flow of notes for continuous curration of the Zettelkasten"
+                                            class="note-link">Manage the flow of notes for continuous curration of the
+                                            Zettelkasten</a>. So you can think of it as a <a
+                                            href="/notes/2020041410531784/"
+                                            title="Process support in place of self-discipline"
+                                            class="note-link">Process support in place of self-discipline</a> ;).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>While tha above has been Thought Tank‘s support on the <a href="/notes/2020041409034716/"
+                                title="Route of information from the text read into the zettelkasten"
+                                class="note-link">Route of information from the text read into the zettelkasten</a>, you
+                            also want to find your notes later.</p>
+                        <ul>
+                            <li>Finding notes
+                                <ul>
+                                    <li><a href="/notes/2020033010363597/"
+                                            title="Separation of independent logical units" class="note-link">Separation
+                                            of independent logical units</a> using topics and orthogonal structuring
+                                        with <a href="/notes/2020033010525847/" title="Tag" class="note-link">Tag</a>
+                                    </li>
+                                    <li>While a single thought should be atomic to ensure the <a
+                                            href="/notes/2020041312062417/" title="Unambiguousness of links"
+                                            class="note-link">Unambiguousness of links</a>, you can have entry/index
+                                        points for <a href="/notes/2020041408555708/"
+                                            title="Documentation of larger, coherent thoughts: the entrypoints"
+                                            class="note-link">Documentation of larger, coherent thoughts: the
+                                            entrypoints</a>. This note is an entrypoint too.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="column info">
+            <!--infos-->
+            <nav class="panel is-shadowless">
+                <p class="panel-heading is-radiusless">
+                    Note Info
+                </p>
+                <div class="tabs is-small">
+                    <ul>
+                        <li class="is-active tab"><a href="#">Related</a></li>
+                        <li class="tab"><a href="#">Tags & Keys</a></li>
+                        <li class="tab"><a href="#">References</a></li>
+                        <li class="tab"><a href="#">Graph</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <p class="subtitle is-5">Topic</p>
+                    <div class="content">Thought Tank</div>
+
+                    <p class="subtitle is-5">Keywords</p>
+                    <div class="field is-grouped is-grouped-multiline">
+
+                        <div class="control">
+                            <a class="tags has-addons" href="//localhost:1313/keywords/atomacity/">
+                                <span class="tag is-primary">atomacity</span>
+                                <span class="tag is-dark"> 1</span>
+                            </a>
+                        </div>
+
+                        <div class="control">
+                            <a class="tags has-addons" href="//localhost:1313/keywords/capture/">
+                                <span class="tag is-primary">capture</span>
+                                <span class="tag is-dark"> 3</span>
+                            </a>
+                        </div>
+
+                        <div class="control">
+                            <a class="tags has-addons" href="//localhost:1313/keywords/concept-map/">
+                                <span class="tag is-primary">concept-map</span>
+                                <span class="tag is-dark"> 1</span>
+                            </a>
+                        </div>
+
+                        <div class="control">
+                            <a class="tags has-addons" href="//localhost:1313/keywords/connecting/">
+                                <span class="tag is-primary">connecting</span>
+                                <span class="tag is-dark"> 1</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="subtitle is-5">Tags</p>
+                    <div class="field is-grouped is-grouped-multiline">
+
+                        <div class="control">
+                            <a class="tags has-addons" href="//localhost:1313/keywords/atomacity/">
+                                <span class="tag is-primary">note-prop</span>
+                                <span class="tag is-dark"> 1</span>
+                            </a>
+                        </div>
+
+                        <div class="control">
+                            <a class="tags has-addons" href="//localhost:1313/keywords/capture/">
+                                <span class="tag is-primary">writing</span>
+                                <span class="tag is-dark"> 3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="subtitle is-5">Flow States</p>
+                    <div class="field is-grouped is-grouped-multiline">
+
+                        <div class="control">
+                            <a class="tags" href="//localhost:1313/keywords/atomacity/">
+                                <span class="tag is-primary">inbox</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
