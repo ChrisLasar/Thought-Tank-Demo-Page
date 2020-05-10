@@ -10,9 +10,16 @@
 
   publish = "dist"
 
+[dev]
+  framework = "#custom"
+  command = "yarn start" # Command to start your dev server
+  port = 8888 # Port that the dev server will be accessible on
+  targetPort = 1313 # Port of target app server
+  publish = "dist" # If you use a _redirect file, provide the path to your static content folder
+
+
 [context.deploy-preview]
   command = "yarn build:preview"
-
 
 [[redirects]]
   from = "/notes/:id/:title"
